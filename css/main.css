@@ -36,3 +36,17 @@
 	background-color: gray;
 
 }
+
+/*Answer Output*/
+.answer-correct {
+	background-color: green;
+	color: white;
+}
+.answer-incorrect {
+	background-color: red;
+	color: white;
+}
+.answer-didntAnswer {
+	background-color: grey;
+	color: white;
+}
