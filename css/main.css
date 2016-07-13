@@ -19,5 +19,20 @@
 
 }
 .form-group button {
-	
+
+}
+.correct {
+	color: white;
+	background-color: green;
+
+}
+.incorrect {
+	color: white;
+	background-color: red;
+
+}
+.empty {
+	color: white;
+	background-color: gray;
+
 }
