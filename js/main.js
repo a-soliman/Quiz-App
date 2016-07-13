@@ -114,7 +114,7 @@ function calculateAnswer() {
 	var magnificent = "magnificent: you scored " + correct + " / " + questionObj.length
 	var veryWell = "VERY-WELL: you scored " + correct + " / " + questionObj.length
 	var halfWay = "HALFWAY: you scored " + correct + " / " + questionObj.length
-	var fail = "YOU REALLY NEED TO STUDY THIS THING.."
+	var fail = "YOU REALLY NEED TO STUDY THIS THING... you scored " + correct + " / " + questionObj.length
 
 	// the if condition
 	if ( correct == questionObj.length )  {
