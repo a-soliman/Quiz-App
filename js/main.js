@@ -52,29 +52,49 @@ function calculateAnswer() {
 	var noAnswer = 0
 
 
-for (var i = 0; i < questionObj.length; i++) {
-	//setting the object answer
-	answer = questionObj[i].answer
-	//getting the user's answer
-	userAnswer = document.getElementById('answer' + [i]).value
+	for (var i = 0; i < questionObj.length; i++) {
+		//setting the object answer
+		answer = questionObj[i].answer
+		//getting the user's answer
+		userAnswer = document.getElementById('answer' + [i]).value
 
 
-	if (userAnswer == answer) {
-		// add the correct class
-		document.getElementById('question' + [i]).setAttribute('class', 'correct')
-		correct++
-		
-	} else if (userAnswer == "") {
-		// add the empty class
-		document.getElementById('question' + [i]).setAttribute('class', 'empty')
-		noAnswer++
+		if (userAnswer == answer) {
+			// add the correct class
+			document.getElementById('question' + [i]).setAttribute('class', 'correct')
+			correct++
+			
+		} else if (userAnswer == "") {
+			// add the empty class
+			document.getElementById('question' + [i]).setAttribute('class', 'empty')
+			noAnswer++
 
-	} else {
-		// add the incorrect class
-		document.getElementById('question' + [i]).setAttribute('class', 'incorrect')
-		incorrect++
+		} 
+		else {
+			// add the incorrect class
+			document.getElementById('question' + [i]).setAttribute('class', 'incorrect')
+			incorrect++
+		}	
 	}
+
+	// setting the result holder
+	var resultOutput = document.getElementById('result')
+	//creating h2 for the results of correct, incorrect and empty	
+	correctResult = document.createElement('h2')
+	incorrectResult = document.createElement('h2')
+	noAnswerResult = document.createElement('h2')
+
+	correctResult.className = "answer-correct"
+	incorrectResult.className = "answer-incorrect"
+	noAnswerResult.className = "answer-didntAnswer"
+
+	correctResult.textContent = 'CORRECT: ' + correct
+	incorrectResult.textContent = 'INCORRECT: ' + incorrect
+	noAnswerResult.textContent = "DIDN'T Answer: " + noAnswer
+
+	resultOutput.appendChild(correctResult)
+	resultOutput.appendChild(incorrectResult)
+	resultOutput.appendChild(noAnswerResult)
 	
-}	
 
 }
