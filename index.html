@@ -3,25 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Quiz App</title>
+		<title>Capital-cities $ countries</title>
+		<!--GOOGLE FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Frijole|Indie+Flower" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-	<section class="container-fluid">
+	<section class="container-fluid wrapper">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="header">
-						<h1>Quiz App test</h1>
-						<p>instraction, test test test</p>
+						<h1>Capital-Cities & Countries</h1>
+						<p>test your geography knowledge</p>
 					</div> <!-- header -->
 				</div> <!-- col-12 -->
 			</div> <!-- row -->
 
 			<div class="row">
-				<div class="col-xs-9">
+				<div class="col-xs-9" id="formCol">
 					<form>
 						<div class="form-group">
 							<p id="question0"></p>
@@ -51,33 +54,38 @@
 							<p id="question6"></p>
 							<input id="answer6" class="form-control" type="text" name="" >
 						</div> <!-- form-group -7- -->
-						<button type="button" onclick="calculateAnswer()" class="btn btn-primary btn-lg">SUBMIT</button>
+						<button type="button" onclick="calculateAnswer()" class="btn  btn-lg">SUBMIT</button>
 					</form>
 				</div> <!-- col-9 -->
 
 				<div class="col-xs-3">
-					<div class="result-side" id="resultSide">
-						
-					</div> <!-- result-side -->
+					
 				</div> <!-- col-3 -->
 			</div> <!-- row -->
 			<div class="row">
-				<div class="col-xs-3">
-					<div id="resultCorrect">
+				<div class="col-sm-3">
+					<div id="resultCorrect" >
 						
 					</div> <!-- resultCorrect -->
 				</div> <!-- col-3 -->
-				<div class="col-xs-3">
+				<div class="col-sm-3">
 					<div id="resultIncorrect">
 						
 					</div> <!-- resultIncorrect -->
 				</div> <!-- col-3 -->
-				<div class="col-xs-3">
+				<div class="col-sm-3">
 					<div id="resultNoAnswer">
 						
 					</div> <!-- resultNoAnswer -->
 				</div> <!-- col-3 -->
-			</div>
+			</div> <!-- row -->
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="result-side" id="resultSide">
+						
+					</div> <!-- result-side  -->
+				</div> <!-- col -->
+			</div> <!-- row -->
 		</div>
 		
 	</section>
@@ -89,5 +97,7 @@
 		<!-- ******Jquery GOOGLE CDN***** -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/jquery.js"></script>
+		
 	</body>
 </html>
