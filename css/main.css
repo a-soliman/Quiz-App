@@ -1,52 +1,112 @@
 
+.wrapper {
+	background-image: url('../img/bg.jpg');
+	background-position: center;
+    background-size: cover;
+    padding-bottom: 200px;
+}
 /* header section*/
 .header {
 	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 50px;
 }
 .header h1 {
-
+	font-family: 'Frijole', cursive;
+	letter-spacing: 5px;
 }
 .header p {
-
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+    letter-spacing: 5px;
+    
+}
+form {
+	padding: 20px;
+    background-color: rgba(4, 1, 1, 0.19);
+    border-radius: 40px;
 }
 .form-group {
 
 }
 .form-group p {
-
+	color: white;
 }
 .form-group input {
 
 }
-.form-group button {
-
+form .btn {
+	color: white;
+	background-color: #56060f;
+    border-color: #ffffff;
+}
+form .btn:hover {
+	color: white;
+	background-color: #a75a7c;
+	border-color: #ffffff;
+}
+form .btn:focus {
+	color: white;
+	background-color: #a75a7c;
+	border: 2px solid #ffffff;
 }
 .correct {
 	color: white;
 	background-color: green;
+	padding: 5px;
 
 }
 .incorrect {
 	color: white;
 	background-color: red;
+	padding: 5px;
 
 }
 .empty {
 	color: white;
 	background-color: gray;
+	padding: 5px;
 
 }
+
 
 /*Answer Output*/
 .answer-correct {
 	background-color: green;
 	color: white;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
 }
 .answer-incorrect {
 	background-color: red;
 	color: white;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
 }
 .answer-didntAnswer {
 	background-color: grey;
 	color: white;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+}
+.result-side {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+}
+
+@media(max-width: 652px){
+	.answer-correct {
+		font-size: 12px;
+	}
+	.answer-incorrect {
+		font-size: 12px;
+	}
+	.answer-didntAnswer {
+		font-size: 12px;
+	}
 }
